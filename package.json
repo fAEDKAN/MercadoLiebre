@@ -1,0 +1,17 @@
+{
+  "name": "enmaquetado",
+  "version": "1.0.0",
+  "description": "TP Enmaquetado DH",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "fAEDKAN",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.18"
+  }
+}
