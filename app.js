@@ -10,4 +10,4 @@ app.get('/',(req,res)=>res.sendFile(path.join(__dirname, 'views', 'index.html'))
 
 app.get('/',(req,res)=>{res.send()});
 
-app.listen(3030,()=>console.log('servidor corriendo'));
+app.listen(3030,()=>console.log('servidor corriendo en puerto 3030'));
