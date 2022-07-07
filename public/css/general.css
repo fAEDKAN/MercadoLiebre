@@ -13,5 +13,6 @@
 }
 
 body {
-    background-color: var(--ColorAmarillo)
+    background-color: var(--ColorAmarillo);
+    font-family: 'Roboto', sans-serif;
 }
