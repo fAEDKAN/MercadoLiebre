@@ -14,5 +14,20 @@
 
 body {
     background-color: var(--ColorAmarillo);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto'
+}
+p {
+    font-size: var(--TamañoCuerposDetexto);
+}
+h1 {
+    font-size: var(--TamañoTitulares);
+}
+h3 {
+    font: var(--TamañoDescripciones);
+}
+h4 {
+    font-size: var(--TamañoPrecios);
+}
+h5 {
+    font-size: var(--TamañoDescuentos);
 }
