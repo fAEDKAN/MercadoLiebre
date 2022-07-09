@@ -10,15 +10,24 @@
     --TamañoPrecios: 18px;
     --TamañoDescuentos: 16px;
     --TamañoDescripciones: 16px;
+    --FuenteDeTexto: 'Roboto';
 }
 
 body {
     background-color: var(--ColorAmarillo);
-    font-family: 'Roboto'
+    font-family: var(--FuenteDeTexto)
 }
 .body__header__div__p--busqueda{
 
 }
-.burguer-menu {
-
+.burger-menu {
+    background-color: var(--ColorCeleste);
+    color: white;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
 }
