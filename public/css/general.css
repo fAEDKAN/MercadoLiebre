@@ -17,9 +17,7 @@ body {
     background-color: var(--ColorAmarillo);
     font-family: var(--FuenteDeTexto)
 }
-.body__header__div__p--busqueda{
 
-}
 .burger-menu {
     background-color: var(--ColorCeleste);
     color: white;
