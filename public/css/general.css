@@ -10,12 +10,40 @@
     --TamañoPrecios: 18px;
     --TamañoDescuentos: 16px;
     --TamañoDescripciones: 16px;
-    --FuenteDeTexto: 'Roboto';
+    --FuenteDeTexto: roboto;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--ColorAmarillo);
     font-family: var(--FuenteDeTexto)
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--ColorAmarillo);
+}
+
+.header__div--logo {
+    width: 50%;
+}
+
+.header__div__p--buscador {
+    width: 50%;
+    font-size: 1em;
+}
+
+.header__div__h2--destacado {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header__section__nav--listas {
+    font-size: 14px;
 }
 
 .burger-menu {
@@ -28,4 +56,115 @@ body {
     text-align: center;
     font-size: 20px;
     margin: auto;
+}
+
+.banner {
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    background-color: var(--ColorGrisClaro);
+}
+
+.main__div--titulares {
+    font-size: var(--TamañoTitulares);
+    color: var(--ColorGrisOscuro);
+    width: 95%;
+}
+
+.main__div__section--visita {
+    background: white;
+}
+
+.main__div__section__article--productos {
+    background-color: white;
+    width: 100%;
+    border: solid 1px #ebebeb;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.main__div__section__article__img--imagen {
+    width: 100%;
+    border-bottom: solid 1px #ebebeb;
+}
+
+.main__div__section__article--precio {
+    font-size: var(--TamañoPrecios);
+}
+
+.main__div__section__article--descuento {
+    font-size: var(--TamañoDescuentos);
+    font-style: normal;
+    color: var(--ColorVerde);
+    margin-top: -5%;
+    margin-left: 2%;
+}
+
+.main__div__section__article--descripcion {
+    font-size: var(--TamañoDescripciones);
+    margin-bottom: 15px;
+    color: var(--ColorGrisOscuro);
+}
+
+.fa-truck {
+    font-size: 16px;
+    color: #39b54a;
+    border: solid 1px var(--ColorVerde);
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+}
+
+.footer__div__section__article--secciones {
+    text-align: center;
+}
+
+.footer__div__section--beneficios {
+    margin-top: 0px;
+    margin-bottom: -10px;
+    color: var(--ColorGrisOscuro);
+}
+
+.footer__div__section--texto {
+    font-size: var(--TamañoCuerposDetexto);
+    color: var(--ColorGrisOscuro);
+}
+
+.footer__div__section--copyright {
+    font-size: var(--TamañoCuerposDetexto);
+    color: var(--ColorGrisOscuro);
+    text-align: center;
+}
+
+.fa-credit-card {
+    color: var(--ColorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fa-gift {
+    color: var(--ColorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fa-user-shield {
+    color: var(--ColorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
 }
