@@ -17,23 +17,35 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--FuenteDeTexto)
+html {
+    background: var(--ColorGrisClaro);
 }
+
+body {
+    font-family: var(--FuenteDeTexto);
+    width: 100%;
+    height: 100vh;
+}
+
 
 /* HEADER */
 
 header {
     background-color: var(--ColorAmarillo);
+    padding: 15px;
+    margin: auto;
 }
 
 .header__div--logo {
     width: 50%;
+
 }
 
-.header__div__p--buscador {
-    width: 50%;
+.header__div--buscador {
+    width: 53%;
+    height: 22px;
     font-size: 1em;
+    margin: 5px 0px 0px 22px;
 }
 
 .header__div__h2--destacado {
@@ -62,9 +74,12 @@ header {
     width: 100%;
 }
 
+
 /* MAIN */
 
-main {
+.contenedor--main {
+    width: 100vw;
+    padding: 15px;
     background-color: var(--ColorGrisClaro);
 }
 
@@ -75,38 +90,41 @@ main {
 }
 
 .main__div__section--visita {
-    background: white;
+    background: var(--ColorGrisClaro);
 }
 
 .main__div__section__article--productos {
     background-color: white;
     width: 100%;
-    border: solid 1px #ebebeb;
-    margin-bottom: 25px;
-    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .main__div__section__article__img--imagen {
     width: 100%;
-    border-bottom: solid 1px #ebebeb;
+    margin: auto;
 }
 
-.main__div__section__article--precio {
+.main__div__section__article__div--descripciones {
+    padding: 15px;
+    border-top: solid 1px var(--ColorGrisClaro);
+}
+
+.main__div__section__article__div--precio {
     font-size: var(--TamañoPrecios);
+    margin-top: 5px;
 }
 
-.main__div__section__article--descuento {
+.main__div__section__article__div--descuento {
     font-size: var(--TamañoDescuentos);
-    font-style: normal;
     color: var(--ColorVerde);
-    margin-top: -5%;
-    margin-left: 2%;
+    margin-top: -25px;
 }
 
-.main__div__section__article--descripcion {
+.main__div__section__article__div--descripcion {
     font-size: var(--TamañoDescripciones);
-    margin-bottom: 15px;
+    margin: 0px;
     color: var(--ColorGrisOscuro);
+    width: 100vw;
 }
 
 .fa-truck {
@@ -123,7 +141,7 @@ main {
 
 /* FOOTER */
 
-footer {
+.contenedor--footer {
     background-color: white;
 }
 
@@ -146,6 +164,7 @@ footer {
     font-size: var(--TamañoCuerposDetexto);
     color: var(--ColorGrisOscuro);
     text-align: center;
+    padding: 20px 0px 25px 0px;
 }
 
 .fa-credit-card {
@@ -167,4 +186,37 @@ footer {
     font-size: 2em;
     margin-bottom: 10px;
     text-align: center;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 361px) {
+    .main__div__section__article__div--descripcion {
+        display: none;
+    }
+    .header__section__nav--listas {
+        display: none;
+    }
+}
+
+
+/* TABLET */
+@media (min-width: 361px) {
+    .main__div__section__article--productos {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .contenedor--footer {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 769px) {
 }
